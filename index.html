@@ -6,11 +6,11 @@
   <title>Tiny URL</title>
 </head>
 <body>
-  <form>
+  <form id="form">
     <label for="longURL">Long URL: </label>
-    <input type="text" id="longURL" name="longURL"><br><br>
+    <input type="text" id="longURL" name="longURL" placeholder="enter addy" value=""><br><br>
     <label for="alias">Alias: </label>
-    <input type="text" id="alias" name="alias"><br><br>
+    <input type="text" id="alias" name="alias" placeholder="enter alias" value=""><br><br>
     <input type="submit" value="Submit">
   </form>
   <br>
@@ -18,7 +18,10 @@
   <br>
   <div>
     <span>RESULT: </span>
-    <span class="result"></span>
+    <span id="result"></span>
   </div>
 </body>
+<script type="text/javascript" src='./script.js'>
+
+</script>
 </html>
