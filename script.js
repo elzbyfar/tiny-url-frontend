@@ -1,5 +1,4 @@
 let result = document.getElementById('result')
-// result.innerText = 'enter result here'
 
 let longURL = document.getElementById('longURL') 
 longURL.addEventListener('change', (event) => {
@@ -33,6 +32,7 @@ form.addEventListener('submit', (event) => {
   .then(resp => resp.json())
   .then(data => {
     result.innerText = data.short_address
+    result.href = data.short_address
   })
 
 })
